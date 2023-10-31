@@ -17,6 +17,8 @@ msw
 stories
 __test__
 .storybook
+*.test.*
+__snapshots__
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
