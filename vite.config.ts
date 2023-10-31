@@ -23,14 +23,6 @@ export default defineConfig({
     alias: {
       src: path.resolve(__dirname, './src')
     }
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: 'src/main.tsx'
-      },
-
-      external: ['src/msw/*', 'src/utils/__test__/*', 'src/stories/*']
-    }
   }
+  
 })
