@@ -11,7 +11,7 @@ export default function useSearchProducts() {
   const nameSchema = schema.pick(['name'])
 
   const queryConfig = useQueryConfig()
-  const { handleSubmit, register } = useForm<FormData>({
+  const { handleSubmit, register, reset } = useForm<FormData>({
     defaultValues: {
       name: ''
     },
@@ -29,6 +29,7 @@ export default function useSearchProducts() {
           ['order', 'sort_by']
         )
       : { ...queryConfig, name: data.name }
+    reset()
     navigate({
       pathname: path.home,
       search: createSearchParams(config).toString()
