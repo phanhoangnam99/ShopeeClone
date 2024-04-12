@@ -11,6 +11,7 @@ import { useContext } from 'react'
 import { AppContext } from 'src/contexts/app.context'
 import Button from 'src/components/Button'
 import { Helmet } from 'react-helmet-async'
+import { url } from 'inspector'
 
 export default function Login() {
   type FormData = Pick<Schema, 'email' | 'password'>
@@ -60,7 +61,14 @@ export default function Login() {
         <meta name='description' content='Đăng nhập vào dự án Shopee clone' />
       </Helmet>
       <div className='container'>
-        <div className='grid grid-cols-1 lg:grid-cols-5 py-12 lg:py-32 lg:pr-10'>
+        <div
+          className='grid grid-cols-1 lg:grid-cols-5 py-12 lg:py-32 lg:pr-10'
+          style={{
+            backgroundImage: `url('./assets/shopee.png')`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'left'
+          }}
+        >
           <div className='lg:col-span-2 lg:col-start-4'>
             <form className='p-10 rounded  bg-white shadow-sm' onSubmit={onSubmit} noValidate>
               <div className='text-2xl'>Đăng nhập</div>
@@ -104,7 +112,7 @@ export default function Login() {
               <div className='flex items-center justify-center mt-8'>
                 <span className='text-gray-300'>
                   Bạn chưa có tài khoản?
-                  <Link to='/register' className='text-red-400'>
+                  <Link to='/register' className='text-red-400 ml-2'>
                     Đăng ký
                   </Link>
                 </span>

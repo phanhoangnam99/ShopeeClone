@@ -6,7 +6,7 @@ export default function RegisterHeader() {
   return (
     <header className='py-5'>
       <div className='container'>
-        <nav className='flex item-end'>
+        <nav className='flex items-end'>
           <Link to='/'>
             <svg viewBox='0 0 192 65' className='h-8 lg:h-11 fill-orange'>
               <g fillRule='evenodd'>

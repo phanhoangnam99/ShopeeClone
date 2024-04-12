@@ -5,7 +5,7 @@ import { LocalStorageEventTarget } from './utils/auth'
 import { useEffect, useContext } from 'react'
 
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import {  AppContext } from './contexts/app.context'
+import { AppContext } from './contexts/app.context'
 import ErrorBoundary from './components/ErrorBoundary'
 import { HelmetProvider } from 'react-helmet-async'
 
@@ -21,6 +21,8 @@ function App() {
   }, [reset])
   return (
     <>
+     
+
       <HelmetProvider>
         <ErrorBoundary>
           {routeElements}

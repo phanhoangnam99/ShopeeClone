@@ -254,7 +254,7 @@ export default function Register() {
               <div className='flex items-center justify-center mt-8'>
                 <span className='text-gray-300'>
                   Bạn đã có tài khoản?
-                  <Link to='/login' className='text-red-400'>
+                  <Link to='/login' className='text-red-400 ml-2'>
                     Đăng nhập
                   </Link>
                 </span>
