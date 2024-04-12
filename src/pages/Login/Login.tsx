@@ -60,15 +60,8 @@ export default function Login() {
         <title>Đăng nhập | Shopee Clone</title>
         <meta name='description' content='Đăng nhập vào dự án Shopee clone' />
       </Helmet>
-      <div className='container'>
-        <div
-          className='grid grid-cols-1 lg:grid-cols-5 py-12 lg:py-32 lg:pr-10'
-          style={{
-            backgroundImage: `url('./assets/shopee.png')`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'left'
-          }}
-        >
+      <div className=' container bg-none lg:bg-[url("./assets/shopee.png")] bg-no-repeat bg-[left_center] h-[600px] '>
+        <div className='grid grid-cols-1 lg:grid-cols-5 py-12 lg:py-32 lg:pr-10'>
           <div className='lg:col-span-2 lg:col-start-4'>
             <form className='p-10 rounded  bg-white shadow-sm' onSubmit={onSubmit} noValidate>
               <div className='text-2xl'>Đăng nhập</div>

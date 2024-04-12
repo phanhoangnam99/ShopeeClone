@@ -13,8 +13,6 @@ import config from 'src/constants/config'
 import { URL_LOGIN, URL_REFRESH_TOKEN, URL_REGISTER, URL_LOGOUT } from 'src/apis/auth.api'
 import { isAxiosExpireError, isAxiosUnAuthorizedError } from './utils'
 import { ErrorResponse } from 'src/types/utils.type'
-import { useNavigate } from 'react-router-dom'
-import path from 'path'
 
 export class Http {
   instance: AxiosInstance

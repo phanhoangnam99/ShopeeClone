@@ -81,8 +81,8 @@ export default function Register() {
         <title>Đăng ký | Shopee Clone</title>
         <meta name='description' content='Đăng ký tài khoản dự án Shopee clone' />
       </Helmet>
-      <div className=' container'>
-        <div className='grid grid-cols-1 lg:grid-cols-5 py-12 lg:py-32 lg:pr-10'>
+      <div className=' container bg-none lg:bg-[url("./assets/shopee.png")] bg-no-repeat bg-[left_center] h-[600px] '>
+        <div className='grid grid-cols-1 lg:grid-cols-5  py-12 lg:my-auto lg:pr-10 relative'>
           <div className='lg:col-span-2 lg:col-start-4'>
             <form className='p-10 rounded  bg-white shadow-sm' onSubmit={onSubmit}>
               <div className='text-2xl'>Đăng ký</div>

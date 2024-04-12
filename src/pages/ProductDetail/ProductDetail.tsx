@@ -16,8 +16,6 @@ import path from 'src/constants/path'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import { convert } from 'html-to-text'
-import { AxiosError } from 'axios'
-import { ErrorResponse } from 'src/types/utils.type'
 
 export default function ProductDetail() {
   const queryClient = useQueryClient()
@@ -66,7 +64,7 @@ export default function ProductDetail() {
 
   const addToCart = async () => {
     try {
-      const res = await addToCartMutation.mutateAsync({ buy_count: buyCount, product_id: product?._id as string })
+      await addToCartMutation.mutateAsync({ buy_count: buyCount, product_id: product?._id as string })
     } catch (err) {
       console.log(err)
       toast.error(err as string)
