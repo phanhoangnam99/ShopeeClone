@@ -11,7 +11,6 @@ import { useContext } from 'react'
 import { AppContext } from 'src/contexts/app.context'
 import Button from 'src/components/Button'
 import { Helmet } from 'react-helmet-async'
-import { url } from 'inspector'
 
 export default function Login() {
   type FormData = Pick<Schema, 'email' | 'password'>
